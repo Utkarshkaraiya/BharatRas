@@ -11,13 +11,64 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.w3-sidebar a {font-family: "Roboto", sans-serif}
-body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
-</style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .dropbtn {
+      background-color: #525252;
+      color: white;
+      padding: 10px;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Style the dropdown content */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      z-index: 1;
+    }
+
+    /* Style the links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Style the dropdown when it's active */
+    .dropdown.active .dropdown-content {
+      display: block;
+    }
+
+    .w3-sidebar a {
+      font-family: "Roboto", sans-serif
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .w3-wide {
+      font-family: "Montserrat", sans-serif;
+    }
+  </style>
   <style>
     .w3-black,
     .w3-hover-black:hover {
@@ -36,11 +87,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     .mySlides {
       display: none
     }
+
     #box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
 
     @media (min-width: 601px) {
@@ -54,11 +106,12 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     #hindi {
       font-size: 22px;
     }
-    #div{
+
+    #div {
       background: rgba(226, 224, 224, 0.6);
 
-  padding: 10px;
-  box-shadow: 5px 7px 10px #888888;
+      padding: 10px;
+      box-shadow: 5px 7px 10px #888888;
 
     }
   </style>
@@ -128,10 +181,13 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1200px" id="band">
       <h2 class="w3-wide">BHARAT RAS</h2>
       <p class="w3-opacity"><i>We love भारत </i></p>
-      <p class="w3-justify" id="hindi">भारतवर्ष मे  तथा अपने क्षेत्र में कई ऐसे चरित्र है जिनको पढने और जानने से,  हमारे अंदर स्वतः ही साहस और आत्मविश्वास और देश प्रेम की भावना का संचार होता है। और हम एक स्वाभिमानी और सशक्त व्यक्तित्व बनते हैं।
-        बच्चों मे राष्ट्रीयता का विकास के लिए,  अखिल भारतीय मारवाड़ी महिला सम्मेलन ने एक राष्ट्रीय स्तर पर कंपटीशन करवाने की पहल की है जिसका नाम है भारत रस । 
+      <p class="w3-justify" id="hindi">भारतवर्ष मे तथा अपने क्षेत्र में कई ऐसे चरित्र है जिनको पढने और जानने से, हमारे
+        अंदर स्वतः ही साहस और आत्मविश्वास और देश प्रेम की भावना का संचार होता है। और हम एक स्वाभिमानी और सशक्त
+        व्यक्तित्व बनते हैं।
+        बच्चों मे राष्ट्रीयता का विकास के लिए, अखिल भारतीय मारवाड़ी महिला सम्मेलन ने एक राष्ट्रीय स्तर पर कंपटीशन करवाने
+        की पहल की है जिसका नाम है भारत रस ।
       </p>
-      <div class="w3-row w3-padding-32">
+      <!-- <div class="w3-row w3-padding-32">
         <div class="w3-third">
           <p>Subhash Ras</p>
           <iframe class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%"
@@ -151,135 +207,135 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
           </iframe>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <!-- Team Container -->
-    <div class="w3-container w3-padding-64 w3-center" id="team">
-      <h1>OUR TEAM</h1>
-      <h4>Meet the team</h4>
+      <!-- Team Container -->
+      <div class="w3-container w3-padding-64 w3-center" id="team">
+        <h1>OUR TEAM</h1>
+        <h4>Meet the team</h4>
 
-      <div class="w3-row"><br>
+        <div class="w3-row"><br>
 
-        <div class="w3-quarter">
-          <img src="img/1.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h2>Pragya Jhunjhunwala</h2>
-          <h4>Co-ordinator</h4>
-        </div>
-        <div class="w3-quarter">
-          <img src="img/4.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h2>Rekha Lakhotia </h2>
-          <h4> National Bal Vikas Head</h4>
-        </div>
+          <div class="w3-quarter">
+            <img src="img/1.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h2>Pragya Jhunjhunwala</h2>
+            <h4>Co-ordinator</h4>
+          </div>
+          <div class="w3-quarter">
+            <img src="img/4.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h2>Rekha Lakhotia </h2>
+            <h4> National Bal Vikas Head</h4>
+          </div>
 
-        <div class="w3-quarter">
-          <img src="img/3.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h2>Neera Bathwal</h2>
-          <h4> Rashtriya Adhyaksh</h4>
-        </div>
-        <div class="w3-quarter">
-          <img src="img/2.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h2>Rupa Agarwal</h2>
-          <h4> Rashtriya Sachiv</h4>
-        </div>
+          <div class="w3-quarter">
+            <img src="img/3.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h2>Neera Bathwal</h2>
+            <h4> Rashtriya Adhyaksh</h4>
+          </div>
+          <div class="w3-quarter">
+            <img src="img/2.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h2>Rupa Agarwal</h2>
+            <h4> Rashtriya Sachiv</h4>
+          </div>
 
-        <div class="w3-quarter">
-          <img src="img/5.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h2>Babita Bagaria </h2>
-          <h4>State President</h4>
-        </div>
-        <div class="w3-quarter">
-          <img src="img/7.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-          <h2>Sweety Lohia</h2>
-          <h4>State Bal Vikas head</h4>
+          <div class="w3-quarter">
+            <img src="img/5.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h2>Babita Bagaria </h2>
+            <h4>State President</h4>
+          </div>
+          <div class="w3-quarter">
+            <img src="img/7.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+            <h2>Sweety Lohia</h2>
+            <h4>State Bal Vikas head</h4>
+          </div>
+
         </div>
 
       </div>
-
     </div>
-  </div>
 
-  <!-- The Tour Section -->
-  <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">BharatRas Dates</h2>
-      <p class="w3-opacity w3-center"><i>Remember the dates!</i></p><br>
+    <!-- The Tour Section -->
+    <div class="w3-black" id="tour">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+        <h2 class="w3-wide w3-center">BharatRas Dates</h2>
+        <p class="w3-opacity w3-center"><i>Remember the dates!</i></p><br>
 
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">12th May <span class="w3-tag w3-red w3-margin-left">Competetion Starts</span></li>
-        <li class="w3-padding">14th May <span class="w3-tag w3-red w3-margin-left">Top Final</span></li>
-        <li class="w3-padding">16th may <span class="w3-tag w3-red w3-margin-left">Closing Ceremoney</span></li>
-      </ul>
+        <ul class="w3-ul w3-border w3-white w3-text-grey">
+          <li class="w3-padding">12th May <span class="w3-tag w3-red w3-margin-left">Competetion Starts</span></li>
+          <li class="w3-padding">14th May <span class="w3-tag w3-red w3-margin-left">Top Final</span></li>
+          <li class="w3-padding">16th may <span class="w3-tag w3-red w3-margin-left">Closing Ceremoney</span></li>
+        </ul>
 
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="img/grp1.png" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Group A (Individual category)</b></p>
-            <p class="w3-opacity">Fri 27 Nov 2023</p>
-            <p>Singing,Dancing,Poetery,Extempore,fancy dress</p>
-            <a href="https://forms.gle/DXL2puPTKsdUmqwz9" target="_blank"> <button
-                class="w3-button w3-black w3-margin-bottom"
-                onclick="document.getElementById('ticketModal').style.display='block'">Participate Now</button></a>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="img/grp2.png" alt="Paris" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Group B (Group of 6-10 kids)</b></p>
-            <p class="w3-opacity">Sat 28 Nov 2023</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <a href="https://forms.gle/DXL2puPTKsdUmqwz9" target="_blank"> <button
-                class="w3-button w3-black w3-margin-bottom"
-                onclick="document.getElementById('ticketModal').style.display='block'">Participate Now</button></a>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="img/grp3.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Volunteer</b></p>
-            <p class="w3-opacity">Sun 29 Nov 2016</p>
-            <p>Be a part of BharatRas as a Volunteer</p>
-            <a href="https://forms.gle/DXL2puPTKsdUmqwz9" target="_blank"> <button
-                class="w3-button w3-black w3-margin-bottom">Participate Now</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-<!-- // compition held in gaya,asansol,varanasi,prasad exokita,koldata,vip tower kolkata, -->
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>All India Marwari Mahila Sammelan</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i>Bharat<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone:9339119671<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: bharatras2023@gmail.com<br>
-        <p class="w3-medium">Become <a href="https://forms.gle/DXL2puPTKsdUmqwz9" target="_blank">Volunteer</a></p>
-      </div>
-      <div class="w3-col m6">
-
-        <form method="post">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" id="email" placeholder="Email" required name="Email">
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+          <div class="w3-third w3-margin-bottom">
+            <img src="img/grp1.png" alt="New York" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <p><b>Group A (Individual category)</b></p>
+              <p class="w3-opacity">Fri 27 Nov 2023</p>
+              <p>Singing,Dancing,Poetery,Extempore,fancy dress</p>
+              <a href="https://forms.gle/DXL2puPTKsdUmqwz9" target="_blank"> <button
+                  class="w3-button w3-black w3-margin-bottom"
+                  onclick="document.getElementById('ticketModal').style.display='block'">Participate Now</button></a>
             </div>
           </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-
-        </form>
+          <div class="w3-third w3-margin-bottom">
+            <img src="img/grp2.png" alt="Paris" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <p><b>Group B (Group of 6-10 kids)</b></p>
+              <p class="w3-opacity">Sat 28 Nov 2023</p>
+              <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+              <a href="https://forms.gle/DXL2puPTKsdUmqwz9" target="_blank"> <button
+                  class="w3-button w3-black w3-margin-bottom"
+                  onclick="document.getElementById('ticketModal').style.display='block'">Participate Now</button></a>
+            </div>
+          </div>
+          <div class="w3-third w3-margin-bottom">
+            <img src="img/grp3.png" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+              <p><b>Volunteer</b></p>
+              <p class="w3-opacity">Sun 29 Nov 2016</p>
+              <p>Be a part of BharatRas as a Volunteer</p>
+              <a href="https://forms.gle/DXL2puPTKsdUmqwz9" target="_blank"> <button
+                  class="w3-button w3-black w3-margin-bottom">Participate Now</button></a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- End Page Content -->
+
+    <!-- // compition held in gaya,asansol,varanasi,prasad exokita,koldata,vip tower kolkata, -->
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+      <h2 class="w3-wide w3-center">CONTACT</h2>
+      <p class="w3-opacity w3-center"><i>All India Marwari Mahila Sammelan</i></p>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker" style="width:30px"></i>Bharat<br>
+          <i class="fa fa-phone" style="width:30px"></i> Phone:9339119671<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> Email: bharatras2023@gmail.com<br>
+          <p class="w3-medium">Become <a href="https://forms.gle/DXL2puPTKsdUmqwz9" target="_blank">Volunteer</a></p>
+        </div>
+        <div class="w3-col m6">
+
+          <form method="post">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" id="email" placeholder="Email" required name="Email">
+              </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Page Content -->
   </div>
   </div>
 
@@ -297,96 +353,102 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     </div>
   </div>
   <!-- Team Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
-  <h2 class="w3-center">SUBHASH RAS WINNERS</h2>
-  <!-- <p class="w3-center w3-large">The ones who runs this company</p> -->
-  <div class="w3-row-padding" id="box"style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/img/footerimg/5.jpg" alt="John" style="width:100% ;height:450px">
-        <div class="w3-container">
-          <h3>Anjana</h3><h2>First Position</h2>
-          <p>Singing</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-trophy"></i> Subhash Ras Winners</button></p>
+  <div class="w3-container" style="padding:128px 16px" id="team">
+    <h2 class="w3-center">SUBHASH RAS WINNERS</h2>
+    <!-- <p class="w3-center w3-large">The ones who runs this company</p> -->
+    <div class="w3-row-padding" id="box" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/img/footerimg/5.jpg" alt="John" style="width:100% ;height:450px">
+          <div class="w3-container">
+            <h3>Anjana</h3>
+            <h2>First Position</h2>
+            <p>Singing</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-trophy"></i> Subhash Ras
+                Winners</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/img/footerimg/6.jpg" alt="Jane" style="width:100% ;height:450px">
+          <div class="w3-container">
+            <h3>Anja Doe</h3>
+            <h2>Second Position</h2>
+            <p>Extempore</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-trophy"></i> Subhash Ras
+                Winners</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="/img/footerimg/9.jpg" alt="Mike" style="width:100% ;height:450px">
+          <div class="w3-container">
+            <h3>Mike Ross</h3>
+            <h2>Third Position</h2>
+            <p>Extempore</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-trophy"></i> Subhash Ras
+                Winners</button></p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/img/footerimg/6.jpg" alt="Jane" style="width:100% ;height:450px">
-        <div class="w3-container">
-          <h3>Anja Doe</h3> <h2>Second Position</h2>
-          <p>Extempore</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-trophy"></i> Subhash Ras Winners</button></p>
-        </div>
+  </div>
+
+  </div>
+
+  <!-- Team Container -->
+  <!-- <div class="w3-container w3-padding-64 w3-center" id="team">
+    <h1>Glimpse of Subhash Ras 2022</h1>
+    <h4>Meet our Top Contestant</h4>
+
+    <div class="w3-row" id="div"><br>
+
+      <div class="w3-third">
+        <p>Vina Makharia</p>
+        <iframe class="w3-round w3-margin-bottom" alt="Random Name" style="width:70% ; height: 80%;"
+          src="https://www.youtube.com/embed/80IynL7eWfE?autoplay=1&mute=1">
+        </iframe>
       </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="/img/footerimg/9.jpg" alt="Mike" style="width:100% ;height:450px">
-        <div class="w3-container">
-          <h3>Mike Ross</h3> 
-          <h2>Third Position</h2>
-          <p>Extempore</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-trophy"></i> Subhash Ras Winners</button></p>
-        </div>
-      </div>
-    </div>
-  </div></div>   
-      
-</div>
-
-    <!-- Team Container -->
-    <div class="w3-container w3-padding-64 w3-center" id="team">
-      <h1>Glimpse of Subhash Ras 2022</h1>
-      <h4>Meet our Top Contestant</h4>
-
-      <div class="w3-row" id="div"><br>
-
-        <div class="w3-third">
-          <p>Vina Makharia</p>
-          <iframe class="w3-round w3-margin-bottom" alt="Random Name" style="width:70% ; height: 80%;"
-            src="https://www.youtube.com/embed/80IynL7eWfE?autoplay=1&mute=1">
-          </iframe>
-        </div>
-        <div class="w3-third">
-          <p>Vanya Chowdhary</p>
-          <iframe class="w3-round w3-margin-bottom" alt="Random Name" style="width:70% ; height: 80%;"
-            src="https://www.youtube.com/embed/eJotnu3pcNI?autoplay=1&mute=1">
-          </iframe>
-        </div>
-
-        <div class="w3-third">
-          <p> Parth Kedia</p>
-          <iframe class="w3-round w3-margin-bottom" alt="Random Name" style="width:70% ; height: 80%;"
-            src="https://www.youtube.com/embed/B6CvjnB3Vz0?autoplay=1&mute=1">
-          </iframe>
-        </div>
-        <div class="w3-third">
-          <p>Pari Gadhyan</p>
-          <iframe class="w3-round w3-margin-bottom" alt="Random Name" style="width:70% ; height: 80%;"
-            src="https://www.youtube.com/embed/x0P94wSOqiE?autoplay=1&mute=1">
-          </iframe>
-        </div>
-        <div class="w3-third">
-          <p>Aryan Kedia
-            </p>
-          <iframe class="w3-round w3-margin-bottom" alt="Random Name" style="width:70% ; height: 80%;"
-            src="https://www.youtube.com/embed/IX8DFThFr9Q?autoplay=1&mute=1">
-          </iframe>
-        </div>
-        <div class="w3-third">
-          <p>Aryan Kedia</p>
-          <iframe class="w3-round w3-margin-bottom" alt="Random Name" style="width:70% ; height: 80%;"
-            src="https://www.youtube.com/embed/jy-fvv8OBuE?autoplay=1&mute=1">
-          </iframe>
-        </div>
+      <div class="w3-third">
+        <p>Vanya Chowdhary</p>
+        <iframe class="w3-round w3-margin-bottom" alt="Random Name" style="width:70% ; height: 80%;"
+          src="https://www.youtube.com/embed/eJotnu3pcNI?autoplay=1&mute=1">
+        </iframe>
       </div>
 
+      <div class="w3-third">
+        <p> Parth Kedia</p>
+        <iframe class="w3-round w3-margin-bottom" alt="Random Name" style="width:70% ; height: 80%;"
+          src="https://www.youtube.com/embed/B6CvjnB3Vz0?autoplay=1&mute=1">
+        </iframe>
+      </div>
+      <div class="w3-third">
+        <p>Pari Gadhyan</p>
+        <iframe class="w3-round w3-margin-bottom" alt="Random Name" style="width:70% ; height: 80%;"
+          src="https://www.youtube.com/embed/x0P94wSOqiE?autoplay=1&mute=1">
+        </iframe>
+      </div>
+      <div class="w3-third">
+        <p>Aryan Kedia
+        </p>
+        <iframe class="w3-round w3-margin-bottom" alt="Random Name" style="width:70% ; height: 80%;"
+          src="https://www.youtube.com/embed/IX8DFThFr9Q?autoplay=1&mute=1">
+        </iframe>
+      </div>
+      <div class="w3-third">
+        <p>Aryan Kedia</p>
+        <iframe class="w3-round w3-margin-bottom" alt="Random Name" style="width:70% ; height: 80%;"
+          src="https://www.youtube.com/embed/jy-fvv8OBuE?autoplay=1&mute=1">
+        </iframe>
+      </div>
     </div>
 
+  </div> -->
 
-<!-- 
+
+  <!-- 
   <div class="w3-container w3-text-grey" id="jeans">
   
   </div>
@@ -422,136 +484,250 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </div>
 
  -->
-  
+
   <!-- <img src="img/main.jpeg" class="" style="width:100%"> -->
 
+  <div class="w3-center">
+    <h1>Unsung Heroes of India’s freedom struggle</h1>
+    <h4 style="padding-bottom: 30px;">Paying tribute to India’s freedom fighters</h4>
 
- 
-  <select id="state-select">
-    <option value="">Select a state</option>
-    <option value="andhra-pradesh">Andhra Pradesh</option>
-    <option value="arunachal-pradesh">Arunachal Pradesh</option>
-    <option value="assam">Assam</option>
-    <option value="bihar">Bihar</option>
-    <option value="chhattisgarh">Chhattisgarh</option>
-    <option value="goa">Goa</option>
-    <option value="gujarat">Gujarat</option>
-    <option value="haryana">Haryana</option>
-    <option value="himachal-pradesh">Himachal Pradesh</option>
-    <option value="jammu-kashmir">Jammu and Kashmir</option>
-    <option value="jharkhand">Jharkhand</option>
-    <option value="karnataka">Karnataka</option>
-    <option value="kerala">Kerala</option>
-    <option value="madhya-pradesh">Madhya Pradesh</option>
-    <option value="maharashtra">Maharashtra</option>
-    <option value="manipur">Manipur</option>
-    <option value="meghalaya">Meghalaya</option>
-    <option value="mizoram">Mizoram</option>
-    <option value="nagaland">Nagaland</option>
-    <option value="odisha">Odisha</option>
-    <option value="punjab">Punjab</option>
-    <option value="rajasthan">Rajasthan</option>
-    <option value="sikkim">Sikkim</option>
-    <option value="tamil-nadu">Tamil Nadu</option>
-    <option value="telangana">Telangana</option>
-    <option value="tripura">Tripura</option>
-    <option value="uttar-pradesh">Uttar Pradesh</option>
-    <option value="uttarakhand">Uttarakhand</option>
-    <option value="west-bengal">West Bengal</option>
-  </select>
-  
-  <div id="state-content">
-    <h2>Select a state to view information:</h2>
-    <p>Please select a state from the dropdown menu above to view information about that state.</p>
+    <select id="state-select" class="dropbtn">
+      <div class="dropdown-content">
+        <option value="">Select a state</option>
+        <option value="andhra-pradesh" selected="selected">Andhra Pradesh</option>
+        <option value="arunachal-pradesh">Arunachal Pradesh</option>
+        <option value="assam">Assam</option>
+        <option value="bihar">Bihar</option>
+        <option value="chhattisgarh">Chhattisgarh</option>
+        <option value="goa">Goa</option>
+        <option value="gujarat">Gujarat</option>
+        <option value="haryana">Haryana</option>
+        <option value="himachal-pradesh">Himachal Pradesh</option>
+        <option value="jammu-kashmir">Jammu and Kashmir</option>
+        <option value="jharkhand">Jharkhand</option>
+        <option value="karnataka">Karnataka</option>
+        <option value="kerala">Kerala</option>
+        <option value="madhya-pradesh">Madhya Pradesh</option>
+        <option value="maharashtra">Maharashtra</option>
+        <option value="manipur">Manipur</option>
+        <option value="meghalaya">Meghalaya</option>
+        <option value="mizoram">Mizoram</option>
+        <option value="nagaland">Nagaland</option>
+        <option value="odisha">Odisha</option>
+        <option value="punjab">Punjab</option>
+        <option value="rajasthan">Rajasthan</option>
+        <option value="sikkim">Sikkim</option>
+        <option value="tamil-nadu">Tamil Nadu</option>
+        <option value="telangana">Telangana</option>
+        <option value="tripura">Tripura</option>
+        <option value="uttar-pradesh">Uttar Pradesh</option>
+        <option value="uttarakhand">Uttarakhand</option>
+        <option value="west-bengal">West Bengal</option>
+    </select>
   </div>
-  
-  
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="" target="_blank">BharatRas</a></p>
-  </footer>
+  </div>
 
-  <script>
-// Get the <select> element and the state-content <div> element
-  const stateSelect = document.getElementById("state-select");
-const stateContent = document.getElementById("state-content");
-
-// Add an event listener to the <select> element to listen for changes
-stateSelect.addEventListener("change", () => {
-  // Get the value of the selected <option> element
-  const selectedState = stateSelect.value;
-  
-  // Use a switch statement to change the content of the <div> element
-  switch(selectedState) {
-    case "andhra-pradesh":
-      stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-16 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img  style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
-      break;
-    case "arunachal-pradesh":
-      stateContent.innerHTML = "<h2>Arunachal Pradesh</h2><p>Information about Arunachal Pradesh goes here.</p>";
-      break;
-  }});
+  <div id="state-content">
+    <h2>Andhra Pradesh</h2>
+    <div class="w3-row-padding w3-padding-32 w3-center" id="food">
+      <div class="w3-quarter"><img src="/img/footerimg/andra1.jpeg" style="width:100%">
+        <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-quarter"><img src="/img/footerimg/andra1.jpeg" style="width:100%">
+        <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-quarter"><img src="/img/footerimg/andra1.jpeg" style="width:100%">
+        <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-quarter"><img src="/img/footerimg/andra1.jpeg" style="width:100%">
+        <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-quarter"><img src="/img/footerimg/andra1.jpeg" style="width:100%">
+        <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+        <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+      <div class="w3-quarter"><img src="/img/footerimg/andra1.jpeg" style="width:100%">
+        <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      </div>
+    </div>
 
 
-  </script>
-  <script>
-    // Automatic Slideshow - change image every 4 seconds
-    var myIndex = 0;
-    carousel();
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">Powered by <a href="" target="_blank">BharatRas</a></p>
+    </footer>
 
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+    <script>
+      // Get the <select> element and the state-content <div> element
+      const stateSelect = document.getElementById("state-select");
+      const stateContent = document.getElementById("state-content");
+
+      // Add an event listener to the <select> element to listen for changes
+      stateSelect.addEventListener("change", () => {
+        // Get the value of the selected <option> element
+        const selectedState = stateSelect.value;
+
+        // Use a switch statement to change the content of the <div> element
+        switch (selectedState) {
+          case "andhra-pradesh":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "arunachal-pradesh":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "assam":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "bihar":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "chhattisgarh":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "goa":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "gujarat":
+            stateContent.innerHTML = "<h2>Arunachal Pradesh</h2><p>Information about Arunachal Pradesh goes here.</p>";
+            break;
+          case "haryana":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "himachal-pradesh":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "jammu-kashmir":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "jharkhand":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "karnataka":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "kerala":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "madhya-pradesh":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "maharashtra":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "manipur":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "meghalaya":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "mizoram":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "nagaland":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "odisha":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "punjab":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "rajasthan":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+
+          case "tamil-nadu":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "telangana":
+            stateContent.innerHTML = "<h2>Andhra Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "tripura":
+            stateContent.innerHTML = "<h2>Tripura</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "uttar-pradesh":
+            stateContent.innerHTML = "<h2>Uttar-Pradesh</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "uttarakhand":
+            stateContent.innerHTML = "<h2>Uttarakhand</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+          case "west-bengal":
+            stateContent.innerHTML = "<h2>West-Bengal</h2><div class=\"w3-row-padding w3-padding-32 w3-center\" id=\"food\"><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\"  style=\"width:100%\"><h3>The Perfect Sandwich, A Real NYC Classic</h3><p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div><div class=\"w3-quarter\"><img src=\"/img/footerimg/andra1.jpeg\" style=\"width:100%\"><p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>";
+            break;
+
+
+        }
+      });
+
+
+    </script>
+    <script>
+      // Automatic Slideshow - change image every 4 seconds
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 4000);
       }
-      myIndex++;
-      if (myIndex > x.length) { myIndex = 1 }
-      x[myIndex - 1].style.display = "block";
-      setTimeout(carousel, 4000);
-    }
 
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
       }
-    }
 
-    var modal = document.getElementById('ticketModal');
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
+      var modal = document.getElementById('ticketModal');
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
       }
-    }
 
-  </script>
-<style>
-  /* Style the dropdown */
-label {
-  display: block;
-  margin-bottom: 10px;
-}
-select {
-  font-size: 16px;
-  padding: 5px;
-}
+    </script>
+    <style>
+      #state-content {
+        background-color: #dcd2d2;
+      }
 
-/* Style the content */
-#content {
-  margin-top: 20px;
-  font-size: 18px;
-}
+      /* Style the dropdown */
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
 
-</style>
+      select {
+        font-size: 16px;
+        padding: 5px;
+      }
+
+      /* Style the content */
+      #content {
+        margin-top: 20px;
+        font-size: 18px;
+      }
+    </style>
 </body>
 
 </html>
